@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.a24shop.MainActivity">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bananas" />
+
+    <TextView
+        android:id="@+id/textview"
+        style="@style/info"
+        android:fontFamily="cursive"
+        android:padding="15dp"
+        android:paddingBottom="20dp"
+        android:text="@string/nameShop"
+        android:textColor="#ff9100"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/slogan"
+        style="@style/info"
+        android:layout_toRightOf="@id/textview"
+        android:fontFamily="casual"
+        android:paddingBottom="18dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:text="@string/slogan"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imagen1"
+        style="@style/iconosInfo"
+        android:layout_alignBottom="@id/fondo"
+        android:onClick="map"
+        android:paddingBottom="15dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/map" />
+
+    <TextView
+        android:id="@+id/direc"
+        style="@style/info"
+        android:layout_alignBottom="@id/fondo"
+        android:layout_toRightOf="@id/imagen1"
+        android:fontFamily="casual"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:text="@string/direccion"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/face"
+        style="@style/iconosInfo"
+        android:layout_above="@id/imagen1"
+        android:onClick="facebook"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/face" />
+
+    <TextView
+        style="@style/info"
+        android:layout_above="@id/direc"
+        android:layout_alignBottom="@id/face"
+        android:layout_toRightOf="@id/face"
+        android:fontFamily="casual"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:text="@string/facebook"
+        android:textColor="#ff9100"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/imagen3"
+        style="@style/iconosInfo"
+        android:layout_above="@id/face"
+        android:onClick="correo"
+        android:paddingTop="10dp"
+        android:src="@drawable/correo1" />
+
+    <ImageView
+        android:id="@+id/imagen2"
+        style="@style/iconosInfo"
+        android:layout_above="@id/imagen3"
+        android:src="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/tlf"
+        style="@style/info"
+        android:layout_alignBottom="@id/imagen2"
+        android:layout_toRightOf="@id/imagen2"
+        android:autoLink="phone"
+        android:fontFamily="bold|cursive"
+        android:paddingLeft="15dp"
+        android:text="@string/phone"
+        android:textColorLink="#ff9100"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/coreo"
+        style="@style/info"
+        android:layout_alignBottom="@id/imagen3"
+        android:layout_below="@id/tlf"
+        android:layout_toRightOf="@id/imagen3"
+        android:fontFamily="casual"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/eMail"
+        android:textSize="23sp" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">24shop</string>
+    <string name="slogan">Frescas \n HASTA las\n     bananas... \n        24horas!!!</string>
+    <string name="direccion" translatable="false">Avda Pintor Pepe Dámaso 0 Local 0B </string>
+    <string name="infoMail">Por favor introduzca su consulta y sus datos</string>
+    <string name="nameShop" translatable="false">24h</string>
+    <string name="phone" translatable="false">928.66.00.55</string>
+    <string name="eMail" translatable="false">24hyourshop@google.es</string>
+    <string name="facebook">Síguenos</string>
+
+</resources>
